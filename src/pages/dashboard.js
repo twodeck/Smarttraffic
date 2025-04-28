@@ -7,8 +7,10 @@ import {
   FaFileAlt, 
   FaBell, 
   FaRoute,
-  FaGamepad
+  FaGamepad,
+  FaGasPump
 } from 'react-icons/fa';
+// Remove the unused motion import
 import Button from '../components/Button/Button';
 import MusicPlayer from '../components/MusicPlayer/MusicPlayer';
 
@@ -19,16 +21,19 @@ const Dashboard = () => {
     decibel: false,
     documentStorer: false,
     trafficNotification: false,
-    dynamicRouting: false
+    dynamicRouting: false,
+    fuelGuider: false
   });
 
+  // Replace these with your actual deployed links
   const deployedLinks = {
     smartTraffic: 'https://smart-traffic.example.com',
     emergency: 'https://emergency-system.example.com',
-    decibel: 'https://remarkable-syrniki-704105.netlify.app/',
-    documentStorer: 'https://serviced-onedeck25s-projects.vercel.app/',
+    decibel: 'https://decibel-monitor.example.com',
+    documentStorer: 'https://document-storer.example.com',
     trafficNotification: 'https://traffic-notifications.example.com',
-    dynamicRouting: 'http://127.0.0.1:5000'
+    dynamicRouting: 'https://dynamic-routing.example.com',
+    fuelGuider: 'https://fuel-guider.example.com'
   };
 
   const simulateLoading = (buttonKey) => {
@@ -37,7 +42,7 @@ const Dashboard = () => {
     setTimeout(() => {
       setLoadingStates(prev => ({ ...prev, [buttonKey]: false }));
       window.open(deployedLinks[buttonKey], '_blank');
-    }, 2000);
+    }, 1000);
   };
 
   return (
@@ -91,10 +96,16 @@ const Dashboard = () => {
           onClick={() => simulateLoading('dynamicRouting')}
           loading={loadingStates.dynamicRouting}
         />
+        
+        <Button 
+          icon={<FaGasPump />} 
+          label="Fuel Guider" 
+          onClick={() => simulateLoading('fuelGuider')}
+          loading={loadingStates.fuelGuider}
+        />
       </ButtonsGrid>
       
       <MusicPlayer />
-      
       <BackgroundGlow />
     </DashboardContainer>
   );
