@@ -29,11 +29,11 @@ const Dashboard = () => {
   const deployedLinks = {
     smartTraffic: 'https://smart-traffic.example.com',
     emergency: 'https://emergency-system.example.com',
-    decibel: 'https://decibel-monitor.example.com',
-    documentStorer: 'https://document-storer.example.com',
+    decibel: 'https://remarkable-syrniki-704105.netlify.app/',
+    documentStorer: 'https://serviced-onedeck25s-projects.vercel.app/',
     trafficNotification: 'https://traffic-notifications.example.com',
-    dynamicRouting: 'https://dynamic-routing.example.com',
-    fuelGuider: 'https://fuel-guider.example.com'
+    dynamicRouting: 'http://127.0.0.1:5000',
+    fuelGuider: 'https://tiny-baklava-6f3bfe.netlify.app/'
   };
 
   const simulateLoading = (buttonKey) => {
