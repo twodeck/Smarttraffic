@@ -27,12 +27,12 @@ const Dashboard = () => {
 
   // Replace these with your actual deployed links
   const deployedLinks = {
-    smartTraffic: 'https://smart-traffic.example.com',
-    emergency: 'https://emergency-system.example.com',
+    smartTraffic: 'http://127.0.0.1:5000',
+    emergency: 'http://127.0.0.1:5001',
     decibel: 'https://remarkable-syrniki-704105.netlify.app/',
     documentStorer: 'https://serviced-onedeck25s-projects.vercel.app/',
-    trafficNotification: 'https://traffic-notifications.example.com',
-    dynamicRouting: 'http://127.0.0.1:5000',
+    trafficNotification: 'http://127.0.0.1:5002',
+    dynamicRouting: 'http://127.0.0.1:5003',
     fuelGuider: 'https://tiny-baklava-6f3bfe.netlify.app/'
   };
 
